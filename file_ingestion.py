@@ -91,7 +91,11 @@ def execute_ingestion():
             df['Fecha Consulta'] = fecha_consulta
             df['archivo'] = file_name
             df['Institucion'] = INSTITUCION
+            for i in ['Fecha de inicio','Fecha Actualizacion','Fecha Consulta']:
+                df[i]= pd.to_datetime(df[i]).dt.strftime('%Y-%m-%d %H:%M:%S')
+                
             df.to_parquet(f'''{source_folder}/{file_name}+{str(fecha_consulta.timestamp()).replace('.','_')}.parquet''')
+            
         except Exception as e:
             errors.append(INSTITUCION)
             print(INSTITUCION,e)
