@@ -4,3 +4,6 @@ spark-warehouse/*
 last_updated_date.txt
 __pycache__/*
 __pycace__
+.ipynb_checkpoints/*
+.ipynb_checkpoints
+
