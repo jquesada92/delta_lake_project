@@ -1,0 +1,6 @@
+_checkpoint/*
+metastore_db/
+spark-warehouse/*
+last_updated_date.txt
+__pycache__/*
+__pycace__

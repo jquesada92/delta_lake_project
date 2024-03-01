@@ -1,0 +1,8 @@
+schema = 'planilla_publicas_panama'
+source_folder = 'raw_data'
+folder = 'spark-warehouse/delta_warehouse/planillas_publicas'
+bronze_table = 'planilla_publicas_panama_dly_sync'
+bronze_location = f'{folder}/bronze'
+silver_location =  f'{folder}/silver'
+agg_by_institucion = f'{folder}/agg_by_institucion'
+agg_by_id = f'{folder}/summary_by_id'
