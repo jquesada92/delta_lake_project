@@ -3,7 +3,7 @@ warnings.filterwarnings("ignore")
 
 from config import *
 
-from pandas import read_excel, options
+from pandas import read_excel, options, to_datetime
 options.mode.chained_assignment = None
 
 from datetime import datetime as dt
@@ -34,7 +34,9 @@ def validate_last_update_date(func):
         webpage_date = dt.strptime(read_update_date_from_url() ,'%d/%m/%Y %H:%M:%S %p')
         try: 
             with open(file,'r+') as f:
-                last_date = dt.strptime(f.read(),'%Y-%m-%d %H:%M:%S')
+                date = str(f.read())
+                print(date)
+                last_date = dt.strptime(date.strip(),'%Y-%m-%d %H:%M:%S')
         
                 if last_date < webpage_date:
                     func(*args, **kwgars)
@@ -44,7 +46,7 @@ def validate_last_update_date(func):
                     
         except FileNotFoundError:
             func(*args, **kwgars)
-            with open(file,'w+') as f:
+            with open(file,'w') as f:
                 f.write(str(webpage_date))
                     
     return wrapper
@@ -92,7 +94,7 @@ def execute_ingestion():
             df['archivo'] = file_name
             df['Institucion'] = INSTITUCION
             for i in ['Fecha de inicio','Fecha Actualizacion','Fecha Consulta']:
-                df[i]= pd.to_datetime(df[i]).dt.strftime('%Y-%m-%d %H:%M:%S')
+                df[i]= to_datetime(df[i]).dt.strftime('%Y-%m-%d %H:%M:%S')
                 
             df.to_parquet(f'''{source_folder}/{file_name}+{str(fecha_consulta.timestamp()).replace('.','_')}.parquet''')
             
