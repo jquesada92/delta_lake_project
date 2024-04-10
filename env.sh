@@ -19,3 +19,7 @@ export PATH=$SPARK_HOME/bin:$PATH
 export PYSPARK_DRIVER_PYTHON=jupyter
 export PYSPARK_DRIVER_PYTHON_OPTS='lab'
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
+export HIVE_HOME=$HOME/hive
+export PATH=$PATH:$HIVE_HOME/bin
+export CLASSPATH=$CLASSPATH:/usr/local/Hadoop/lib/*:.
+export CLASSPATH=$CLASSPATH:/usr/local/hive/lib/*:.
