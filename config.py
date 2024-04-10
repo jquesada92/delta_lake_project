@@ -1,6 +1,6 @@
 schema = 'planilla_publicas_panama'
-source_folder = 'raw_data'
-folder = 'spark-warehouse/planilla_publicas_panama.db'
+contraloria_source_folder = 'contraloria/planillas/raw_data/'
+folder = 'planilla_publicas_panama.db'
 bronze_table = f'{schema}.bronze'
 bronze_location = f'{folder}/bronze'
 silver_location =  f'{folder}/silver'

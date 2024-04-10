@@ -16,7 +16,7 @@ import io
 import os
 
 print('Ingestion Process')
-os.makedirs(source_folder ,exist_ok = True)
+os.makedirs(contraloria_source_folder ,exist_ok = True)
 RUN_MODE = 'ALL_CORES'
 
 def validate_last_update_date(func):
@@ -36,11 +36,12 @@ def validate_last_update_date(func):
             with open(file,'r+') as f:
                 date = str(f.read())
                 print(date)
-                last_date = dt.strptime(date.strip(),'%Y-%m-%d %H:%M:%S')
+                last_date = dt.strptime(date.strip().lstrip('\x00'),'%Y-%m-%d %H:%M:%S')
         
                 if last_date < webpage_date:
                     func(*args, **kwgars)
-                    f.write(str(webpage_date))
+                    f.truncate(0)
+                    f.write(str(webpage_date).lstrip('\x00'))
                 else:
                     print('no updates available')
                     
@@ -96,7 +97,7 @@ def execute_ingestion():
             for i in ['Fecha de inicio','Fecha Actualizacion','Fecha Consulta']:
                 df[i]= to_datetime(df[i]).dt.strftime('%Y-%m-%d %H:%M:%S')
                 
-            df.to_parquet(f'''{source_folder}/{file_name}+{str(fecha_consulta.timestamp()).replace('.','_')}.parquet''')
+            df.to_parquet(f'''{contraloria_source_folder}/{file_name}+{str(fecha_consulta.timestamp()).replace('.','_')}.parquet''')
             
         except Exception as e:
             errors.append(INSTITUCION)
