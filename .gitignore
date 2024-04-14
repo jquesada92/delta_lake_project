@@ -10,3 +10,5 @@ acces_token.txt
 ipynb_checkpoints/*
 deltalake/speed_test/_checkpoint/*
 deltalake/contraloria/*
+hive/*
+hive
