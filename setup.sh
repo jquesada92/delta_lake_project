@@ -3,6 +3,7 @@ sudo apt install software-properties-common -y
 sudo apt-get install ssh
 
 python3 -m pip install delta-spark==3.0.0
+sudo apt-get install speedtest
 cd $HOME
 mkdir $HOME/opt/hadoop
 

@@ -1,1 +1,2 @@
 jupyterlab-code-formatter
+speedtest-cli
