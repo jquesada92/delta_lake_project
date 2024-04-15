@@ -12,3 +12,10 @@ deltalake/speed_test/_checkpoint/*
 deltalake/contraloria/*
 hive/*
 hive
+contraloria/*
+laprensa/*
+auxilios_economicos.ipynb
+planilla_contraloria.ipynb
+file_ingestion.py
+config.py
+

@@ -1,3 +1,0 @@
-v1
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_20_04_1713056674.json","timestamp":1713056674557,"batchId":17}
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_20_05_1713056701.json","timestamp":1713056702007,"batchId":17}

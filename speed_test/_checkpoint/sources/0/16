@@ -1,8 +1,0 @@
-v1
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_19_57_1713056253.json","timestamp":1713056253227,"batchId":16}
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_19_58_1713056313.json","timestamp":1713056313407,"batchId":16}
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_19_59_1713056373.json","timestamp":1713056373597,"batchId":16}
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_20_00_1713056433.json","timestamp":1713056433797,"batchId":16}
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_20_01_1713056493.json","timestamp":1713056493987,"batchId":16}
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_20_02_1713056554.json","timestamp":1713056554167,"batchId":16}
-{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_13_20_03_1713056614.json","timestamp":1713056614377,"batchId":16}
