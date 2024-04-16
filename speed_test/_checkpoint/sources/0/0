@@ -66,3 +66,6 @@ v1
 {"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_15_19_29_1713227346.json","timestamp":1713227362838,"batchId":0}
 {"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_15_19_32_1713227553.json","timestamp":1713227569378,"batchId":0}
 {"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_15_19_33_1713227583.json","timestamp":1713227605558,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_15_21_05_1713233100.json","timestamp":1713233123238,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_15_21_06_1713233186.json","timestamp":1713233199498,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_15_21_07_1713233239.json","timestamp":1713233256798,"batchId":0}
