@@ -1,4 +1,4 @@
-_checkpoint/*
+speed_test/_checkpoint/*
 metastore_db/
 spark-warehouse/*
 last_updated_date.txt
