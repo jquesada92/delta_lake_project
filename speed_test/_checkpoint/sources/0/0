@@ -100,3 +100,12 @@ v1
 {"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_16_07_1713301623.json","timestamp":1713301640924,"batchId":0}
 {"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_16_34_1713303255.json","timestamp":1713303269364,"batchId":0}
 {"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_16_35_1713303340.json","timestamp":1713303353724,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_16_35_1713303357.json","timestamp":1713303378904,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_16_36_1713303383.json","timestamp":1713303405054,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_18_55_1713311719.json","timestamp":1713311736422,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_18_55_1713311739.json","timestamp":1713311758632,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_18_56_1713311763.json","timestamp":1713311779652,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_19_28_1713313719.json","timestamp":1713313733871,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_19_28_1713313737.json","timestamp":1713313755541,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_19_29_1713313760.json","timestamp":1713313776171,"batchId":0}
+{"path":"file:///home/hadoop/deltalake/speed_test/raw_data/log_2024_04_16_19_54_1713315292.json","timestamp":1713315315036,"batchId":0}
