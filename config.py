@@ -1,9 +1,4 @@
-schema = 'planilla_publicas_panama'
-contraloria_source_folder = 'contraloria/planillas/raw_data/'
-folder = 'planilla_publicas_panama.db'
-bronze_table = f'{schema}.bronze'
-bronze_location = f'{folder}/bronze'
-silver_location =  f'{folder}/silver'
-silver_table = f'{schema}.silver'
-agg_by_institucion = f'{folder}/agg_by_institucion'
-agg_by_id = f'{folder}/summary_by_id'
+MAIN_PATH = "speed_test/"
+TEMP_PATH = f"{MAIN_PATH}temp/"
+RAW_PATH = f"{MAIN_PATH}raw_data/"
+CHECK_POINT = f"{MAIN_PATH}_checkpoint"
